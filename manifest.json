@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Snowfall",
+  "version": "1.0",
+  "description": "Красивый снегопад на DeepSeek",
+  "content_scripts": [
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
